@@ -1,0 +1,17 @@
+with-expecter: true
+resolve-type-alias: false
+disable-version-string: true
+issue-845-fix: true
+packages:
+  github.com/Geriler/hitalent/internal/domain/department:
+    config:
+      dir: internal/mocks/department
+      outpkg: mockdepartment
+    interfaces:
+      Repository:
+  github.com/Geriler/hitalent/internal/domain/employee:
+    config:
+      dir: internal/mocks/employee
+      outpkg: mockemployee
+    interfaces:
+      Repository:
